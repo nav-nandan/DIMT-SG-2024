@@ -26,8 +26,8 @@ In order to successfully complete this demo you need to install few tools before
 1. Clone and enter this repository.
 
    ```bash
-   git clone https://github.com/confluentinc/live-labs.git
-   cd DIMT2024
+   git clone https://github.com/nav-nandan/DIMT-SG-2024.git
+   cd DIMT-SG-2024
    ```
 
 ### Confluent Cloud
@@ -69,7 +69,7 @@ Create Confluent Cloud API keys by following [this](https://registry.terraform.i
 1. Step into **dimt_kafka_cluster**.
 1. On the navigation menu, select **Connectors** and then **+ Add connector**.
 1. In the search bar search for **Sample Data** and select the **Sample Data** which is a fully-managed connector.
-1. Create 4 new connectors using values in `actual_datagen_*` files.
+1. Create 4 new connectors using values in `main.tf` datagen source connector section.
 
 </details>
 <br>
@@ -93,8 +93,6 @@ If you’re interested in learning more about Flink, you can take the Apache Fli
 1.  You will use the code editor to query existing Flink tables (Kafka topics) and to write new queries.
 
 1.  To write a new query, click on the **+** icon to create a new cell.
-
-    > **Note:** For your convenience, all Flink queries are available in the [flink.sql](./confluent/flink.sql) file.
 
 1.  See how `orders` table was created
     ```sql
